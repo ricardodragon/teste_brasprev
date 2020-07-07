@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.core.model.Cliente;
 import com.endpoint.service.ClienteService;
-import com.model.Cliente;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

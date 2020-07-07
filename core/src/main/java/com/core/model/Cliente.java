@@ -1,11 +1,17 @@
-package com.model;
+package com.core.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 
 @Entity
@@ -22,7 +28,7 @@ public class Cliente implements AbstractEntity{
 	private Long id;
 
 	@Override
-	public Long getId() {		
+	public Long getId() {
 		return this.id;
 	}
 	
