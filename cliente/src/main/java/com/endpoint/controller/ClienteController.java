@@ -12,16 +12,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.core.model.Cliente;
 import com.endpoint.service.ClienteService;
 
-import lombok.RequiredArgsConstructor;
+//import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("v1/admin/cliente")
 @Slf4j
-@RequiredArgsConstructor(onConstructor_ = {@Autowired})
+//@RequiredArgsConstructor(onConstructor = {@Autowired})
 public class ClienteController {
 	
-	private final ClienteService clienteService;
+	@Autowired
+	private ClienteService clienteService;
+	
 	
 	@GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE )
 	public ResponseEntity<Iterable<Cliente>> list(Pageable pageable) {

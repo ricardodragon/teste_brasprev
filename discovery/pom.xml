@@ -11,6 +11,7 @@
 	
 	<artifactId>discovery</artifactId>
 	
+	<name>discovery</name>
 
 	<dependencies>
 		<dependency>
@@ -19,8 +20,7 @@
 		</dependency>		
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.1</version>
+			<artifactId>jaxb-api</artifactId>			
 		</dependency>
 		<dependency>
 			<groupId>javax.activation</groupId>
@@ -30,11 +30,11 @@
 		<dependency>
 			<groupId>org.glassfish.jaxb</groupId>
 			<artifactId>jaxb-runtime</artifactId>
-			<version>2.3.1</version>
 		</dependency>
 	</dependencies>
 	
 	<build>
+	
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
