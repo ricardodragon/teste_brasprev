@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	
-	<groupId>com</groupId>
+	<groupId>com.rva</groupId>
 	<artifactId>teste_brasprev</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -20,7 +20,7 @@
 	</properties>
 
 	<modules>
-		<module>cliente</module>
+		<module>loja</module>
 		<module>core</module>
 	</modules>
 	
@@ -71,12 +71,17 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>7.0</version>
+        </dependency>
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>			
+		</dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

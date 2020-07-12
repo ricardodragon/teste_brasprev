@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableZuulProxy
 @EnableEurekaClient
-@ComponentScan("com")
+@ComponentScan("com.rva")
 public class GatewayApplication {
 
 	public static void main(String[] args) {

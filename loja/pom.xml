@@ -9,24 +9,22 @@
 		<relativePath>../</relativePath>
 	</parent>
 	
-	<artifactId>discovery</artifactId>	
-	<name>discovery</name>
+	<artifactId>loja</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>loja</name>
 
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>			
-		</dependency>		
-
-		<dependency>
-			<groupId>javax.activation</groupId>
-			<artifactId>activation</artifactId>
-			<version>1.1.1</version>
+			<groupId>com</groupId>
+			<artifactId>core</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
-		<finalName>discovery</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
