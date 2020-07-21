@@ -18,13 +18,13 @@ public class JwtConfiguration {
 	@NestedConfigurationProperty
 	private Header header = new Header();
 	private int expiration = 3600;
-	private String  key = "jkdnASKJNoFNLndsdnflkjdnSDNK";
+	private String  key = "H+MbPeShVmYq3t6w9z$C&F)J@NcRfTjW";
 	private String type = "encripited";
 		
 	@Getter
 	@Setter
 	public class Header { 
 		private String name = "Authorization";
-		private String prefix = "Bearer";
+		private String prefix = "Bearer ";
 	}
 }

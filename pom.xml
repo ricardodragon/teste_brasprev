@@ -22,6 +22,7 @@
 	<modules>
 		<module>loja</module>
 		<module>core</module>
+		<module>token</module>
 	</modules>
 	
 	<dependencies>
@@ -64,11 +65,6 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
 		</dependency>
         <dependency>
             <groupId>com.nimbusds</groupId>
